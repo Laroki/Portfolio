@@ -1,0 +1,50 @@
+@keyframes slidein {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0%);
+    opacity: 1
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.frontPage__header {
+  display: flex;
+  // border: 1px solid red;
+  width: 25%;
+  height: 100%;
+  background: white;
+  animation: slidein 1s ease ;
+}
+
+.header__title {
+  font-size: 20em;
+  font-weight: bold;
+  line-height: 0.9em;
+  margin-top: 0.10em;
+  // border: 1px solid red;
+  color: var(--rose);
+}
+
+.frontPage__desc {
+  color: white;
+  font-size: 3.8em;
+  width: 60%;
+  position: absolute;
+  right: 5%;
+  bottom: 30%;
+  animation : appear 1s ease;
+
+}

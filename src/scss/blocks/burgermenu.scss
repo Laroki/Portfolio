@@ -1,0 +1,41 @@
+.burger{
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width:50px;
+  height: 50px;
+  background: darkgreen;
+  z-index: 2;
+}
+
+.menu {
+  z-index: 1;
+  width: 40vw;
+  height: 100vh;
+  background:var(--rose);
+  position: fixed;
+  transform: translateX(70vw);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+}
+
+.menu--isOpen {
+  transform: translateX(30vw);
+}
+
+.menu__navigation {
+  height: 50%;
+  font-size: 4em;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.link{
+  color:white;
+  cursor: pointer;
+}
