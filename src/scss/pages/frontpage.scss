@@ -40,11 +40,15 @@
 
 .frontPage__desc {
   color: white;
-  font-size: 3.8em;
+  font-size: 3.3em;
   width: 60%;
   position: absolute;
   right: 5%;
   bottom: 30%;
+  line-height: 1.56;
   animation : appear 1s ease;
 
+  &::first-letter{
+    text-transform: uppercase;
+  }
 }
